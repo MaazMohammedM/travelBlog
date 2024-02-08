@@ -1,0 +1,84 @@
+@import "./reset.css";
+.container{
+    --max-width:120rem;
+    --horizontal-padding: 1.6rem;
+    width: min(var(--max-width), 100% - (var(--horizontal-padding)*8));
+    margin-inline: auto;
+}
+
+.full-bleed {
+    width: 100vw;
+    /* height: 100vh; */
+    background-image: url('https://picsum.photos/1800/2400/?blur');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .full-bleed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 100vw var(--clr-primary-0);
+    clip-path: inset(0 -100vw);
+    /* background-image: linear-gradient(rgb(255, 255, 255),rgba(128, 128, 128, 0)); */
+    z-index: -1;
+  }
+
+  .full-bleed::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(128, 128, 128, 0));
+    z-index: -1;
+  }
+
+  .second-heading {
+    color: var(--clr-py-1);
+    /* Font Accent 40 Bold */
+    font-family: var(--ft-acnt);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4rem;
+  }
+
+
+  .cmn-tb-padding{
+    padding: 6.4rem 0px;
+  }
+
+
+  footer .cmn-tb-padding{
+    padding: 7.2rem 0rem;
+  }
+
+  
+
+
+  /* Media Queries */
+  @media  (max-width:51.25em){
+
+    .container{
+      width: min(var(--max-width), 100% - (var(--horizontal-padding)*5));
+    }
+    .cmn-tb-padding{
+      padding: 4.8rem 0rem;
+    }
+  }
+
+  @media (max-width:25.875em){
+    .cmn-tb-padding{
+      padding: 4rem 0rem;
+    }
+  }

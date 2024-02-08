@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+:root{
+    /* Setting up the root font */
+    font-size: 62.5%;
+
+    /* Variables */
+
+    /* Colors */
+    /* Primary Color */
+    --clr-py-0:hsl(0, 0%, 100%);
+    --clr-py-1:hsl(0, 0%, 94%);
+    --clr-py-2: hsl(0, 0%, 82%);
+    --clr-py-3:hsl(0, 0%, 63%);
+
+    /* Secondary Color */
+    --clr-sy-0:hsl(0, 0%, 20%);
+    --clr-sy-1:hsl(0, 0%, 27%);
+    --clr-sy-2:hsl(0, 0%, 13%);
+    --clr-sy-3:hsl(0, 0%, 7%);
+
+    /* Accent Color */
+    --clr-acnt-0:hsl(1, 78%, 59%);
+    --clr-acnt-1: hsl(2, 73%, 66%);
+    --clr-acnt-2: hsl(4, 70%, 50%);
+    --clr-acnt-3:hsl(2, 88%, 34%);
+
+    /* Bg-Gradient */
+    --bg-gradient: hsl(0,0%,13%), hsl(2,88%,34%);
+
+    /* Font */
+    --ft-acnt: 'Playfair Display', serif ;
+    --ft-py : 'Montserrat', sans-serif;
+
+    /* Font weight */
+    --ft-wt-r: 400;
+    --ft-wt-m: 500;
+    --ft-wt-b: 700;
+    --ft-wt-B: 900;
+
+    /* font-size */
+    --fs-08: 0.5rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem ;
+    --fs-22: 1.375rem ;
+    --fs-24: 1.5rem ;
+    --fs-28: 1.75rem ;
+    --fs-32: 2rem ;
+    --fs-36: 2.25rem ;
+    --fs-40: 2.5rem ;
+    --fs-44: 2.75rem ;
+    --fs-48: 3rem;
+    --fs-52: 3.25rem;
+    --fs-56: 3.5rem;
+    --fs-64: 4rem;
+    --fs-72: 4.5rem ;
+
+}
+
+body{
+    font-size: 1.6rem;
+}
